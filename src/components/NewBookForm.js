@@ -12,7 +12,7 @@ const NewBookForm = () => {
     setAuthor('');
   }
   return ( 
-    <form onSubmit={handleSubmit()}>
+    <form onSubmit={handleSubmit}>
       <input type="text" placeholder='book title' value={title}
       onChange={(e) => setTitle(e.target.value)} required />
       <input type="text" placeholder='book author' value={author}
